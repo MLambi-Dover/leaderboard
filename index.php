@@ -15,7 +15,7 @@
 	<body> 
 <div class="container">
 		<h1>Leaderboard</h1> 
-	oh yeah
+	oh yeah, lets go
 		<table> 
 			<tr> 
 				<td>Ranking</td> 
