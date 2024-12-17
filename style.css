@@ -20,7 +20,6 @@ body {
   }
 }
 
-/* add gradient to text, possibly animate */
 h2 {
   font-family: "Berkshire Swash", "Josefin Sans", serif;
   font-size: 64px;
@@ -37,7 +36,6 @@ h2 {
   background-clip: text;
   background-size: 200%;
   color: transparent;
-  /* color: #dc2626; */
 
   animation: 5s linear infinite text-animation;
 }
