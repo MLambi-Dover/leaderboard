@@ -9,6 +9,7 @@
 			flex-direction: column;
 			align-items: center;
 			align-content: center;
+		}
 	</style>
 	</head> 
 
