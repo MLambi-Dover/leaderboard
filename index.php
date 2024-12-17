@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
+		<meta http-equiv="refresh" content="10">
 		<title>LeaderBoard Using PHP</title> 
 		<link rel="stylesheet" href="./reset.css">
 		<link rel="stylesheet" href="./style.css">
@@ -19,69 +20,47 @@
 	<body> 
 <div class="container">
 		<h2>Holiday Light Leaderboard</h2> 
-		<table> 
+		<table>
 			<thead>
 
-				<tr> 
+			<tr> 
 					<th>Ranking</th> 
 					<th>Name</th> 
 					<th>Marks</th> 
-				</tr> 
+			</tr> 
 			</thead>
 			<tbody>
-				<tr id="first">
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr id="second">
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr id="third">
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Peter Parker</td>
-					<td>500</td>
-				</tr>
-			</tbody>
-			</table> 
-		</div>
+<?php 
+
+/* Connection Variable ("Servername", 
+"username","password","database") */
+$con = mysqli_connect("localhost", 
+		"hrlvesmy_leaderboard",
+		"O6,&*7Y(oCy{",
+		"hrlvesmy_leaderboard"); 
+
+/* Mysqli query to fetch rows 
+in descending order of marks */
+$result = mysqli_query($con, "SELECT userName, 
+marks FROM leaderboard ORDER BY marks DESC LIMIT 10"); 
+
+/* First rank will be 1 and 
+	second be 2 and so on */
+$ranking = 1; 
+
+/* Fetch Rows from the SQL query */
+if (mysqli_num_rows($result)) { 
+	while ($row = mysqli_fetch_array($result)) { 
+		echo "<tr> <td>{$ranking}</td> 
+		<td>{$row['userName']}</td> 
+		<td>{$row['marks']}</td></tr>"; 
+		$ranking++; 
+	} 
+} 
+?> 
+</tbody>
+</table> 
+</div>
 </body> 
 </html> 
 
