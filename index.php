@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-		<meta http-equiv="refresh" content="30">
+		<meta http-equiv="refresh" content="10">
 		<title>LeaderBoard Using PHP</title> 
 	<style>
 		.container {
