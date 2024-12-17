@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", serif;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+@keyframes text-animation {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+/* add gradient to text, possibly animate */
+h2 {
+  font-family: "Berkshire Swash", "Josefin Sans", serif;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 48px;
+  background-image: linear-gradient(
+    to right,
+    #dc2626,
+    #fdba74,
+    #dc2626,
+    #fdba74,
+    #dc2626
+  );
+  background-clip: text;
+  background-size: 200%;
+  color: transparent;
+  /* color: #dc2626; */
+
+  animation: 5s linear infinite text-animation;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 24px;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table tr {
+  padding: 2px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+}
+
+table td,
+table th {
+  padding: 8px 32px;
+  font-size: 24px;
+}
+
+table th {
+  font-weight: 600;
+  text-align: left;
+}
+
+#first {
+  background-image: linear-gradient(to right, #fbbf24, #fde68a);
+}
+
+#second {
+  background-image: linear-gradient(to right, #94a3b8, #e2e8f0);
+}
+
+#third {
+  background-image: linear-gradient(to right, #a16207, #b08d57);
+}
