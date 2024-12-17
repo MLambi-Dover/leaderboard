@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
+		<meta http-equiv="refresh" content="10">
 		<title>LeaderBoard Using PHP</title> 
 	<style>
 		.container {
@@ -13,7 +14,8 @@
 
 	<body> 
 <div class="container">
-		<h2>Leaderboard</h2> 
+		<h1>Leaderboard</h1> 
+	oh yeah, lets go ssomewhere
 		<table> 
 			<tr> 
 				<td>Ranking</td> 
