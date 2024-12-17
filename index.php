@@ -3,25 +3,33 @@
 	<head> 
 		<meta http-equiv="refresh" content="10">
 		<title>LeaderBoard Using PHP</title> 
-	<style>
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			align-content: center;
-	</style>
+		<link rel="stylesheet" href="./reset.css">
+		<link rel="stylesheet" href="./style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head> 
 
 	<body> 
 <div class="container">
-		<h1>Leaderboard</h1> 
-	oh yeah, lets go ssomewhere
-		<table> 
+		<h2>Holiday Light Leaderboard</h2> 
+		<table>
+			<thead>
+
 			<tr> 
-				<td>Ranking</td> 
-				<td>UserName</td> 
-				<td>Marks</td> 
+					<th>Ranking</th> 
+					<th>Name</th> 
+					<th>Marks</th> 
 			</tr> 
+			</thead>
+			<tbody>
 <?php 
 
 /* Connection Variable ("Servername", 
@@ -50,6 +58,7 @@ if (mysqli_num_rows($result)) {
 	} 
 } 
 ?> 
+</tbody>
 </table> 
 </div>
 </body> 
