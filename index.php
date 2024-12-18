@@ -74,8 +74,8 @@ if (mysqli_num_rows($result)) {
 			<td>{$row['marks']}</td></tr>"; 
 			$ranking++; 
 			}
-		} 
 	} 
+} 
 ?> 
 </tbody>
 </table> 
