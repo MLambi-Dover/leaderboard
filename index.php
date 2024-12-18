@@ -26,7 +26,7 @@
 			<tr> 
 					<th>Ranking</th> 
 					<th>Name</th> 
-					<th>Marks</th> 
+					<th>Time/sec</th> 
 			</tr> 
 			</thead>
 			<tbody>
@@ -42,7 +42,7 @@ $con = mysqli_connect("localhost",
 /* Mysqli query to fetch rows 
 in descending order of marks */
 $result = mysqli_query($con, "SELECT userName, 
-marks FROM leaderboard ORDER BY marks DESC LIMIT 10"); 
+marks FROM leaderboard ORDER BY marks ASC LIMIT 10"); 
 
 /* First rank will be 1 and 
 	second be 2 and so on */
