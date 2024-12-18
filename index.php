@@ -56,25 +56,23 @@ if (mysqli_num_rows($result)) {
 			<td>{$row['userName']}</td> 
 			<td>{$row['marks']}</td></tr>"; 
 			$ranking++; 
-		elif ($ranking == 2) {
+		} elseif ($ranking == 2) {
 			echo "<tr id='second'> <td>{$ranking}</td> 
 			<td>{$row['userName']}</td> 
 			<td>{$row['marks']}</td></tr>"; 
 			$ranking++; 
-		elif ($ranking == 3) {
+		} elseif ($ranking == 3) {
 			echo "<tr id='third'> <td>{$ranking}</td> 
 			<td>{$row['userName']}</td> 
 			<td>{$row['marks']}</td></tr>"; 
 			$ranking++; 
-
-			
-		else:
+		} else: {
 			echo "<tr> <td>{$ranking}</td> 
 			<td>{$row['userName']}</td> 
 			<td>{$row['marks']}</td></tr>"; 
 			$ranking++; 
+		} 
 	} 
-} 
 ?> 
 </tbody>
 </table> 
