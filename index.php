@@ -56,7 +56,7 @@ if (mysqli_num_rows($result)) {
 				<td>{$row['userName']}</td> 
 				<td>{$row['marks']}</td></tr>"; 
 				$ranking++;
-			} elseif {
+			} elseif ($ranking == 2) {
 				echo "<tr id='second'> <td>{$ranking}</td> 
 				<td>{$row['userName']}</td> 
 				<td>{$row['marks']}</td></tr>"; 
