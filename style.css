@@ -72,12 +72,15 @@ table th {
 
 #first {
   background-image: radial-gradient(red, green);
+  color: white;
 }
 
 #second {
   background-image: radial-gradient(green, red);
+  color: white;
 }
 
 #third {
   background-image: radial-gradient(red, green);
+  color: white;
 }
