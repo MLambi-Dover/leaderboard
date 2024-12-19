@@ -19,7 +19,7 @@
 
 	<body> 
 <div class="container">
-		<h2>Holiday Light Leaderboard</h2> 
+		<h2>Leaderboard</h2> 
 		<table>
 			<thead>
 
