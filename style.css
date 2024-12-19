@@ -11,6 +11,13 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  background-image: url(images/design-01jfgkjeyx-1734650453-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 @keyframes text-animation {
   from {
     background-position: 0;
