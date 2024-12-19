@@ -72,6 +72,7 @@ table th {
 
 #first {
   background-image: radial-gradient(red, green);
+  opacity: 0.7;
   color: white;
 }
 
