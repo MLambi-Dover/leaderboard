@@ -52,17 +52,17 @@ $ranking = 1;
 if (mysqli_num_rows($result)) { 
 	while ($row = mysqli_fetch_array($result)) { 
 			if ($ranking == 1) {
-				echo "<tr id='first'> <td>{$ranking}</td> 
+				echo "<tr id='first' style='color: white;'> <td>{$ranking}</td> 
 				<td>{$row['userName']}</td> 
 				<td>{$row['marks']}</td></tr>"; 
 				$ranking++;
 			} elseif ($ranking == 2) {
-				echo "<tr id='second'> <td>{$ranking}</td> 
+				echo "<tr id='second' style='color: white;'> <td>{$ranking}</td> 
 				<td>{$row['userName']}</td> 
 				<td>{$row['marks']}</td></tr>"; 
 				$ranking++;
 			} elseif ($ranking == 3) {
-				echo "<tr id='third'> <td>{$ranking}</td> 
+				echo "<tr id='third' style='color: white;'> <td>{$ranking}</td> 
 				<td>{$row['userName']}</td> 
 				<td>{$row['marks']}</td></tr>"; 
 				$ranking++;
