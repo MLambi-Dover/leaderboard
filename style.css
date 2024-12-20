@@ -55,6 +55,12 @@ h2 {
   margin: 12px 24px;
 }
 
+table, th, td {
+  background-color: seagreen;
+  color: white;
+  border-radius: 25px;
+}
+
 table {
   border-collapse: collapse;
   table-layout: fixed;
