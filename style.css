@@ -13,7 +13,7 @@ body {
 
 .container {
   background-image: url(images/design-01jfgkjeyx-1734650453-1.jpg);
-  background-size: 99%;
+  background-size: contain;
   background-repeat: no-repeat;
   height: auto;
   width: 100vw;
