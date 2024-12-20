@@ -58,6 +58,8 @@ h2 {
 table {
   border-collapse: collapse;
   table-layout: fixed;
+  border-radius: 25px;
+  background-color: lightseagreen;
 }
 
 table tr {
